@@ -55,6 +55,7 @@ a:hover {
     text-decoration: underline;
     color:#f83d1c;
 }
+
 .nav {
     background-color: white;
     padding: 15px;
@@ -112,6 +113,7 @@ footer {
      .main-header{ 
          padding-top: 10px;
      } 
+    
       .main-nav {
         margin-top:-1em;
         flex-direction: row;
@@ -175,7 +177,8 @@ footer {
     .main-nav {
         margin-top: 20px;
         align-self: center;
-    }
+    } 
+   
    
     .main-container, #portfolio, #contact {
         padding:23px;
