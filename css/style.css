@@ -1,0 +1,194 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+}
+.main-header {
+    background:#f7f7d9;  
+    padding: 0 0 32px;
+}
+.main-header,
+.main-nav {
+    display:flex;
+    flex-direction: column;
+}
+
+body {
+    background:#f7f7d9; 
+    text-align: center;
+    color:  #242222;
+    margin: 0 auto;
+}
+.main-container{
+    background:linear-gradient(#ebf5c9c7,#e6d96a, #c2b6f5, #f7f7d9);
+} 
+H2 {
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;  
+}
+h1,ul, .main-footer  {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin:30px 10px;
+}
+h3, p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin:10px 8px;
+ }
+img {
+    width:100%;
+}
+li {
+    list-style: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding:15px;
+}
+a{
+    text-decoration: none;
+    color: rgb(36, 34, 34);
+}
+a:hover {
+    text-decoration: underline;
+    color:#f83d1c;
+}
+.nav {
+    background-color: white;
+    padding: 15px;
+    margin: 8px 16px;    
+}
+.pro-intro {
+    margin-top: -20px;
+}
+.profile-picture {
+    padding-top:15px;
+    padding-bottom:15px;
+    width: 60%; 
+}
+.main-container, #portfolio, #contact {
+    padding:30px;
+}
+.subsection {
+    padding-bottom:25px;
+}
+.quote {  
+    font: 20px 'Georgia', sans-serif;
+    font-style: italic;
+    color:white;
+    margin: 0;
+    background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+    padding: 50px;
+    border-radius: 50%;
+}
+.quote figcaption,
+.quote blockquote {
+    margin: 20px 10px;
+}
+.phone-email {
+      margin-top:25px;
+}
+
+.footer-nav {
+    display:none;
+}
+footer {
+    border-top:solid rgb(173, 172, 172) 1px;
+    margin-top:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+/* ================================= 
+  Media Queries for tablets at 768px
+==================================== */
+ @media screen and (min-width:768px) {
+     body{
+         flex-wrap:wrap;
+     }
+     .main-header{ 
+         padding-top: 10px;
+     } 
+      .main-nav {
+        margin-top:-1em;
+        flex-direction: row;
+        justify-content:center;
+      }
+      .nav {
+        background-color:transparent;     
+      } 
+      .pro-intro {
+          display:flex;
+          justify-content: center;
+       }
+      .profile-picture {
+         max-width:50%;
+          order:2;
+          margin-right:20px;
+          margin-bottom: 20px;
+       }
+      .introduction {
+          text-align: left;
+          margin-left:30px;
+          font-size:17px;
+          line-height: 3vh;
+      }
+       .section {
+           display:flex;
+           flex-wrap:wrap;
+           justify-content: space-between;
+           margin:0.5rem;
+        }
+       .subsection{
+           max-width:48%;
+       }
+       .quote {
+           border-radius: 2%;
+           margin-left:10px;
+           margin-right:10px;
+       }
+       .contact-text {
+        max-width: 65%;
+        margin: auto;           
+       }
+      .footer-nav{
+          display: flex;
+          margin-top:-3px;         
+      }
+      .top-top{
+          display:none;
+      }    
+} 
+ /* ================================= 
+  Media Queries for desktop screen at 1024px
+==================================== */
+@media screen and (min-width:1024px) {  
+    .main-header {
+	    flex-direction: row;
+        justify-content: space-between;
+        padding-left:30px;
+        padding-right:20px;
+	  }
+    .main-nav {
+        margin-top: 20px;
+        align-self: center;
+    }
+   
+    .main-container, #portfolio, #contact {
+        padding:23px;
+    }
+    .subsection{
+        max-width:32.5%;
+    }
+    .contact-text {
+        max-width: 50%;
+        margin: auto;           
+    }
+   .quote {
+        border-radius: 0;
+        font-size: 30px;
+    }
+}
